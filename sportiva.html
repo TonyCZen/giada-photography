@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Editorial | Giada Photography</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-base': '#F0F8FF',
+                        'ice-shade': '#E6F2FF',
+                        'ice-text': '#2C3E50',
+                        'ice-accent': '#A8D0E6',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-ice-base text-ice-text font-sans antialiased">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center relative h-16"> 
+            <div class="flex items-center">
+                <a href="index.html" class="inline-block">
+                    <img src="img/Logo Giada Burli.svg" alt="Logo" id="nav-logo" class="transition-all duration-300 object-contain" style="height: 160px; width: auto; max-width: none;"> 
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+                <a href="index.html#portfolio" class="hover:text-ice-accent">Torna al Portfolio</a>
+                <a href="index.html#contact" class="px-5 py-2 border border-ice-text rounded-full hover:bg-ice-text hover:text-white transition-all">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-48 pb-12 px-6 container mx-auto text-center reveal">
+        <p class="font-sans text-xs tracking-[0.4em] uppercase mb-2 text-gray-500">Galleria Fotografica</p>
+        <h1 class="font-serif text-5xl md:text-6xl mb-4">Sport</h1>
+        <div class="w-16 h-0.5 bg-ice-accent mx-auto mb-8"></div>
+        <p class="max-w-2xl mx-auto text-gray-600 font-light leading-relaxed">
+            L'energia catturata in un istante. Una celebrazione del movimento e della determinazione, dove il tempismo perfetto incontra la potenza pura del gesto atletico.
+        </p>
+    </header>
+
+    <main class="container mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Allenamento Palestra">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Corsa su Strada">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Crossfit Action">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1530549387631-fbb129c150cc?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Nuoto Agonistico">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Bodybuilding Portrait">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1517438984742-1262db08379e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Calcio Azione">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Yoga Strength">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Ginnastica Artistica">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Runner Sprint">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1518611012118-29fa75a28420?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Fitness Lifestyle">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Ciclismo">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Tennis Match">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Basket Action">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1551632432-c735e8299422?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Escursionismo Sportivo">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1521533845262-17c55c0d745d?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Boxe Training">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Stadio Atmosfera">
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-xs text-gray-400 uppercase tracking-widest border-t border-ice-shade">
+        <a href="index.html" class="hover:text-ice-accent transition">← Home Portfolio</a>
+        <p class="mt-4">&copy; 2026 Giada Photography. Diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-ice-base/98 backdrop-blur-xl hidden flex-col items-center justify-center">
+    
+        <button id="close-lightbox" class="absolute top-6 right-6 z-[110] p-4 text-ice-text text-3xl hover:text-ice-accent transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="relative w-full h-full flex items-center justify-center overflow-hidden">
+            <img id="lightbox-img" src="" alt="Full view" class="max-h-[90vh] max-w-[95vw] object-contain shadow-2xl transition-transform duration-300">
+        </div>
+        
+        <p id="lightbox-caption" class="absolute bottom-10 font-serif text-lg italic text-ice-text"></p>
+    </div>
+</body>
+</html>

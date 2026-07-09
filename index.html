@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giada Photography | Visual Artist</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-base': '#F0F8FF',     // Il tuo AliceBlue
+                        'ice-shade': '#E6F2FF',    // Una tonalità leggermente più scura
+                        'ice-text': '#2C3E50',     // Un grigio/blu scuro per il testo (non nero puro)
+                        'ice-accent': '#A8D0E6',   // Un azzurro polvere per i dettagli
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-ice-base text-ice-text font-sans antialiased selection:bg-ice-accent selection:text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center relative h-16"> 
+            <div class="flex items-center">
+                <a href="#" class="inline-block">
+                    <img src="img/Logo Giada Burli.svg" 
+                        alt="Logo" 
+                        id="nav-logo"
+                        class="transition-all duration-300 object-contain"
+                        style="height: 160px; width: auto; max-width: none;"> 
+                        </a>
+            </div>
+
+            <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+                <a href="#portfolio" class="hover:text-ice-accent transition-colors duration-300">Portfolio</a>
+                <a href="#services" class="hover:text-ice-accent transition-colors duration-300">Servizi</a>
+                <a href="about.html" class="hover:text-ice-accent transition-colors duration-300">About</a>
+                <a href="#contact" class="px-5 py-2 border border-ice-text rounded-full hover:bg-ice-text hover:text-white transition-all">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" 
+                 alt="Fashion Editorial Background" 
+                 class="w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-ice-base"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 animate-fade-in-up">
+            <p class="font-sans text-sm tracking-[0.3em] uppercase mb-4 text-gray-700">Photography Portfolio</p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 text-gray-900">Catturare<br><span class="italic text-gray-600">l'effimero.</span></h1>
+            <a href="#portfolio" class="inline-block mt-8 text-sm border-b border-gray-800 pb-1 hover:text-ice-accent hover:border-ice-accent transition-all">Esplora i lavori</a>
+        </div>
+    </header>
+
+    <section id="portfolio" class="py-24 px-6 container mx-auto">
+        <div class="text-center mb-16 reveal">
+            <h2 class="font-serif text-4xl mb-2">Lavori</h2>
+            <div class="w-12 h-0.5 bg-ice-accent mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <a href="fashion.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Fashion Photography"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Moda</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+            <a href="brand.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Brand & Commercial"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Commerciale</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+            <a href="sportiva.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Sport Photography"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Sportiva</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+            <a href="eventi.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Eventi"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Eventi</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+            <a href="maternity.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Maternity"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Maternity</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+            <a href="travel.html" 
+               class="group relative overflow-hidden h-[450px] cursor-pointer reveal block">
+                <img 
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    alt="Travel & Landscapes"
+                    loading="lazy">
+                <div class="absolute inset-0 bg-ice-base/80 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+                    <h3 class="font-serif text-2xl italic">Travel</h3>
+                    <p class="text-xs uppercase tracking-widest mt-2">Vedi Galleria →</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                
+                <div class="p-8 hover:bg-white hover:shadow-xl hover:shadow-blue-100/50 transition-all duration-300 rounded-sm group text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="woman" class="mx-auto w-10 h-10 mb-4 text-ice-accent fill-current">
+                        <g>
+                            <path d="M42.13,12.89A3,3,0,0,0,40,12H31.93A8,8,0,0,0,16,12.29C14,12.11,11.92,12,9.9,12H8a3,3,0,0,0-3,3,2,2,0,0,0,2,2h7.22A39.76,39.76,0,0,0,14,24.44c0,.59,0,1.09,0,1.46a2,2,0,0,0,.72,1.54,2,2,0,0,0,1.29.47,2.46,2.46,0,0,0,.37,0,7.65,7.65,0,0,0,3.17-1.66l.45.37v2.7l-7.21,2.4A7,7,0,0,0,8,38.32V42a1,1,0,0,0,2,0V38.32a5,5,0,0,1,3-4.56V42a1,1,0,0,0,2,0V40a2,2,0,0,1,2-2h2a3,3,0,0,1,3,3,2,2,0,0,0,4,0,3,3,0,0,1,3-3h2a2,2,0,0,1,2,2v2a1,1,0,0,0,2,0V33.76a5,5,0,0,1,3,4.56V42a1,1,0,0,0,2,0V38.32a7,7,0,0,0-4.79-6.64L28,29.28v-2.7l.45-.37a7.62,7.62,0,0,0,3.18,1.66,1.47,1.47,0,0,0,.36,0,2,2,0,0,0,1.29-.47A2,2,0,0,0,34,25.9c0-.34,0-.81,0-1.36a39.81,39.81,0,0,0-.31-7.7c1.46.1,2.92.16,4.38.16H41a2,2,0,0,0,2-2A3,3,0,0,0,42.13,12.89ZM24,26c-2.32,0-6-2.44-6-9V14.52c1.92.24,3.85.54,5.78,1h.07c2,.43,4.09.76,6.15,1V17C30,23.56,26.32,26,24,26ZM24,7a6,6,0,0,1,6,6v1.48c-1.93-.24-3.86-.55-5.78-1h-.07c-2-.43-4.07-.75-6.13-1A6,6,0,0,1,24,7ZM7.31,14.29A.93.93,0,0,1,8,14H9.9c1.73,0,3.49.09,5.25.23-.12.25-.21.51-.32.77H7A1,1,0,0,1,7.31,14.29ZM16,25.9c0-.38,0-.91,0-1.52a47.88,47.88,0,0,1,.09-6.06,12.43,12.43,0,0,0,2.16,6.4A5.7,5.7,0,0,1,16,25.9ZM15,36.56V33.05l1-.33v3.42A3.85,3.85,0,0,0,15,36.56Zm17-.42V32.72l1,.33v3.51A3.85,3.85,0,0,0,32,36.14ZM26.68,31,30,32.05v4H29a5,5,0,0,0-5,5,5,5,0,0,0-5-5H18v-4L21.32,31A1,1,0,0,0,22,30V27.65a5.89,5.89,0,0,0,4,0V30A1,1,0,0,0,26.68,31ZM32,24.49c0,.57,0,1.05,0,1.42a5.91,5.91,0,0,1-2.2-1.19,12.4,12.4,0,0,0,2.15-6.27A52.1,52.1,0,0,1,32,24.49ZM38.1,15c-2,0-4.07-.11-6.1-.3V14h8a1,1,0,0,1,.71.31A.93.93,0,0,1,41,15Z"></path>
+                            <path d="M25.29,21.29a2,2,0,0,1-2.58,0,1,1,0,0,0-1.42,1.42,4.05,4.05,0,0,0,5.42,0,1,1,0,0,0-1.42-1.42Z"></path>
+                        </g>
+                    </svg>
+                    <h3 class="font-serif text-2xl mb-4">Moda</h3>
+                    <p class="text-gray-500 font-light leading-relaxed mb-6">
+                        Dall'editoriale al lookbook. Creiamo immagini che costruiscono un immaginario editoriale unico e d'impatto.
+                    </p>
+                    <a href="package-moda.html" 
+                    class="inline-block px-6 py-2 border border-ice-accent text-[10px] uppercase tracking-widest hover:bg-ice-accent hover:text-white transition-all duration-500">
+                        Vedi Pacchetti
+                    </a>
+                </div>
+
+                <div class="p-8 hover:bg-white hover:shadow-xl hover:shadow-blue-100/50 transition-all duration-300 rounded-sm group text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="cheers" class="mx-auto w-10 h-10 mb-4 text-ice-accent stroke-current">
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+                            <line x1="56.16" x2="50.7" y1="57.98" y2="40.39"></line>
+                            <line x1="50.6" x2="61.71" y1="59.7" y2="56.25"></line>
+                            <path d="M38.22,14.14h17a0,0,0,0,1,0,0V32.49a8.5,8.5,0,0,1-8.5,8.5h0a8.5,8.5,0,0,1-8.5-8.5V14.14A0,0,0,0,1,38.22,14.14Z" transform="matrix(.96 -.3 .3 .96 -6.07 15.08)"></path>
+                            <polygon points="56.3 29.75 38.18 28.74 34.62 17.26 50.86 12.22 56.3 29.75"></polygon>
+                            <line x1="7.85" x2="13.31" y1="57.98" y2="40.39"></line>
+                            <line x1="13.41" x2="2.29" y1="59.7" y2="56.25"></line>
+                            <path d="M17.28,14.14h0a8.5,8.5,0,0,1,8.5,8.5V41a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0V22.64A8.5,8.5,0,0,1,17.28,14.14Z" transform="rotate(-162.76 17.284 27.568)"></path>
+                            <polygon points="7.71 29.75 25.82 28.74 29.38 17.26 13.14 12.22 7.71 29.75"></polygon>
+                            <line x1="32" x2="31.99" y1="9.14" y2="4.3"></line>
+                            <line x1="36.24" x2="39.65" y1="10.9" y2="7.46"></line>
+                            <line x1="27.76" x2="24.33" y1="10.89" y2="7.47"></line>
+                        </g>
+                    </svg>
+                    <h3 class="font-serif text-2xl mb-4">Eventi</h3>
+                    <p class="text-gray-500 font-light leading-relaxed mb-6">
+                        La cronaca discreta dei tuoi momenti migliori. Documentiamo l'emozione con uno stile reportage ed elegante.
+                    </p>
+                    <a href="package-eventi.html" 
+                    class="inline-block px-6 py-2 border border-ice-accent text-[10px] uppercase tracking-widest hover:bg-ice-accent hover:text-white transition-all duration-500">
+                        Scopri di più
+                    </a>
+                </div>
+
+                <div class="p-8 hover:bg-white hover:shadow-xl hover:shadow-blue-100/50 transition-all duration-300 rounded-sm group text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="mx-auto w-10 h-10 mb-4 text-ice-accent group-hover:text-ice-accent transition-colors">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                </svg>
+                    <h3 class="font-serif text-2xl mb-4">Commerciale</h3>
+                    <p class="text-gray-500 font-light leading-relaxed mb-6">
+                        Storytelling visivo per il tuo Business. Immagini curate per elevare l'identità del tuo brand/azienda sul mercato.
+                    </p>
+                    <a href="package-commerciale.html" 
+                    class="inline-block px-6 py-2 border border-ice-accent text-[10px] uppercase tracking-widest hover:bg-ice-accent hover:text-white transition-all duration-500">
+                        Soluzioni Business
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 container mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/2">
+            <h2 class="font-serif text-4xl mb-6">Ciao, sono Giada.</h2>
+            <p class="text-gray-600 leading-relaxed mb-6 font-light">
+                Amo la luce del mattino e i colori desaturati. La mia fotografia è un invito alla calma, alla purezza delle linee e alla sincerità delle emozioni. 
+            </p>
+            <div class="flex space-x-4 mt-8">
+                <a href="#" class="text-gray-400 hover:text-ice-accent transition">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-ice-accent transition">Pinterest</a>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 w-full bg-white p-10 shadow-sm border border-ice-shade">
+            <form>
+                <div class="mb-6">
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Nome</label>
+                    <input type="text" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-ice-accent bg-transparent transition-colors">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Email</label>
+                    <input type="email" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-ice-accent bg-transparent transition-colors">
+                </div>
+                <div class="mb-8">
+                    <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Messaggio</label>
+                    <textarea rows="3" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-ice-accent bg-transparent transition-colors"></textarea>
+                </div>
+                <button type="button" class="bg-ice-text text-white px-8 py-3 text-sm tracking-widest hover:bg-gray-700 transition-colors w-full md:w-auto">
+                    INVIA MESSAGGIO
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-gray-400 uppercase tracking-widest border-t border-ice-shade">
+        &copy; 2026 Giada Photography. Diritti riservati.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

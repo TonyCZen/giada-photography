@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Editorial | Giada Photography</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-base': '#F0F8FF',
+                        'ice-shade': '#E6F2FF',
+                        'ice-text': '#2C3E50',
+                        'ice-accent': '#A8D0E6',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-ice-base text-ice-text font-sans antialiased">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center relative h-16"> 
+            <div class="flex items-center">
+                <a href="index.html" class="inline-block">
+                    <img src="img/Logo Giada Burli.svg" alt="Logo" id="nav-logo" class="transition-all duration-300 object-contain" style="height: 160px; width: auto; max-width: none;"> 
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
+                <a href="index.html#portfolio" class="hover:text-ice-accent">Torna al Portfolio</a>
+                <a href="index.html#contact" class="px-5 py-2 border border-ice-text rounded-full hover:bg-ice-text hover:text-white transition-all">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-48 pb-12 px-6 container mx-auto text-center reveal">
+        <p class="font-sans text-xs tracking-[0.4em] uppercase mb-2 text-gray-500">Galleria Fotografica</p>
+        <h1 class="font-serif text-5xl md:text-6xl mb-4">Travel & Panorami</h1>
+        <div class="w-16 h-0.5 bg-ice-accent mx-auto mb-8"></div>
+        <p class="max-w-2xl mx-auto text-gray-600 font-light leading-relaxed">
+            Oltre i confini, verso l'infinito. Una raccolta di visioni dal mondo che esplorano la maestosità della natura e l'anima dei luoghi, catturando l'essenza stessa del viaggio.
+        </p>
+    </header>
+
+    <main class="container mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Panorama Montano">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Lago Alpino">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Parigi Travel">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Paesaggio Norvegese">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Spiaggia Tropicale">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Stelle in Montagna">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1493246507139-91e8bef99c02?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Peak View">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Viaggio in Islanda">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Valle Verde">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Tramonto sul mare">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1470252649358-96f52ad4f6f0?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Foresta Nebbiosa">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Barca al Lago">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-143308617760c-b387933800bb?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Cascata">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Luce tra gli alberi">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Yosemite Valley">
+            </div>
+
+            <div class="reveal h-[350px] overflow-hidden group border border-ice-shade shadow-sm">
+                <img 
+                    src="https://images.unsplash.com/photo-1532274402911-5a33904d2824?auto=format&fit=crop&w=1200&q=80" 
+                    class="w-full h-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-110" 
+                    alt="Travel Finale">
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-xs text-gray-400 uppercase tracking-widest border-t border-ice-shade">
+        <a href="index.html" class="hover:text-ice-accent transition">← Home Portfolio</a>
+        <p class="mt-4">&copy; 2026 Giada Photography. Diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-ice-base/98 backdrop-blur-xl hidden flex-col items-center justify-center">
+    
+        <button id="close-lightbox" class="absolute top-6 right-6 z-[110] p-4 text-ice-text text-3xl hover:text-ice-accent transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="relative w-full h-full flex items-center justify-center overflow-hidden">
+            <img id="lightbox-img" src="" alt="Full view" class="max-h-[90vh] max-w-[95vw] object-contain shadow-2xl transition-transform duration-300">
+        </div>
+        
+        <p id="lightbox-caption" class="absolute bottom-10 font-serif text-lg italic text-ice-text"></p>
+    </div>
+</body>
+</html>

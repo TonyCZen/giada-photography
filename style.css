@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Personalizzazione Scrollbar per Chrome/Safari/Edge */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F0F8FF; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* slate-300 */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; /* slate-400 */
+}
+
+/* Animazione Fade In per la Hero */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Glassmorphism Effect Class (applicata via JS alla navbar) */
+.glass-nav {
+    background-color: rgba(240, 248, 255, 0.85); /* Ice White semi-trasparente */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* style.css - Aggiungi in fondo */
+
+/* --- SCROLL REVEAL ANIMATION --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px); /* Ridotto un po' per renderlo più fluido */
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0); /* Torna alla posizione originale */
+}
+
+#lightbox-img {
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}

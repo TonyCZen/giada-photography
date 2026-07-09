@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacchetti Moda | Giada Photography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-base': '#F0F8FF',
+                        'ice-shade': '#E6F2FF',
+                        'ice-text': '#2C3E50',
+                        'ice-accent': '#A8D0E6',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ice-base text-ice-text font-sans antialiased">
+
+    <nav class="fixed w-full z-50 px-8 py-6 flex justify-between items-center bg-white/80 backdrop-blur-sm border-b border-ice-shade">
+        <div class="font-serif text-2xl tracking-widest italic uppercase">Giada</div>
+        <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.4em]">
+            <a href="index.html" class="hover:text-ice-accent transition">Home</a>
+            <a href="index.html#portfolio" class="hover:text-ice-accent transition">Portfolio</a>
+            <a href="about.html" class="hover:text-ice-accent transition">Bio</a>
+            <a href="index.html#contact" class="hover:text-ice-accent transition border-b border-ice-accent pb-1">Contatti</a>
+        </div>
+    </nav>
+
+    <header class="pt-48 pb-20 px-6 container mx-auto text-center">
+        <span class="text-4xl block mb-6 text-ice-accent fill-current">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="mx-auto w-12 h-12 fill-current">
+                <path d="M42.13,12.89A3,3,0,0,0,40,12H31.93A8,8,0,0,0,16,12.29C14,12.11,11.92,12,9.9,12H8a3,3,0,0,0-3,3,2,2,0,0,0,2,2h7.22A39.76,39.76,0,0,0,14,24.44c0,.59,0,1.09,0,1.46a2,2,0,0,0,.72,1.54a2,2,0,0,0,1.29.47,2.46,2.46,0,0,0,.37,0,7.65,7.65,0,0,0,3.17-1.66l.45.37v2.7l-7.21,2.4A7,7,0,0,0,8,38.32V42a1,1,0,0,0,2,0V38.32a5,5,0,0,1,3-4.56V42a1,1,0,0,0,2,0V40a2,2,0,0,1,2-2h2a3,3,0,0,1,3,3,2,2,0,0,0,4,0,3,3,0,0,1,3-3h2a2,2,0,0,1,2,2v2a1,1,0,0,0,2,0V33.76a5,5,0,0,1,3,4.56V42a1,1,0,0,0,2,0V38.32a7,7,0,0,0-4.79-6.64L28,29.28v-2.7l.45-.37a7.62,7.62,0,0,0,3.18,1.66,1.47,1.47,0,0,0,.36,0,2,2,0,0,0,1.29-.47A2,2,0,0,0,34,25.9c0-.34,0-.81,0-1.36a39.81,39.81,0,0,0-.31-7.7c1.46.1,2.92.16,4.38.16H41a2,2,0,0,0,2-2A3,3,0,0,0,42.13,12.89ZM24,26c-2.32,0-6-2.44-6-9V14.52c1.92.24,3.85.54,5.78,1h.07c2,.43,4.09.76,6.15,1V17C30,23.56,26.32,26,24,26ZM24,7a6,6,0,0,1,6,6v1.48c-1.93-.24-3.86-.55-5.78-1h-.07c-2-.43-4.07-.75-6.13-1A6,6,0,0,1,24,7ZM7.31,14.29A.93.93,0,0,1,8,14H9.9c1.73,0,3.49.09,5.25.23-.12.25-.21.51-.32.77H7A1,1,0,0,1,7.31,14.29ZM16,25.9c0-.38,0-.91,0-1.52a47.88,47.88,0,0,1,.09-6.06,12.43,12.43,0,0,0,2.16,6.4A5.7,5.7,0,0,1,16,25.9ZM15,36.56V33.05l1-.33v3.42A3.85,3.85,0,0,0,15,36.56Zm17-.42V32.72l1,.33v3.51A3.85,3.85,0,0,0,32,36.14ZM26.68,31,30,32.05v4H29a5,5,0,0,0-5,5,5,5,0,0,0-5-5H18v-4L21.32,31A1,1,0,0,0,22,30V27.65a5.89,5.89,0,0,0,4,0V30A1,1,0,0,0,26.68,31ZM32,24.49c0,.57,0,1.05,0,1.42a5.91,5.91,0,0,1-2.2-1.19,12.4,12.4,0,0,0,2.15-6.27A52.1,52.1,0,0,1,32,24.49ZM38.1,15c-2,0-4.07-.11-6.1-.3V14h8a1,1,0,0,1,.71.31A.93.93,0,0,1,41,15Z"></path>
+            </svg>
+        </span>
+        <h1 class="font-serif text-5xl md:text-6xl italic mb-6">Moda</h1>
+        <p class="max-w-xl mx-auto text-gray-500 font-light leading-relaxed text-sm uppercase tracking-widest">
+            Servizi fotografici per Brand, Designer ed Editoriali.
+        </p>
+    </header>
+
+    <main class="container mx-auto px-6 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            <div class="bg-white p-10 border border-ice-shade hover:shadow-2xl hover:shadow-blue-100/30 transition-all duration-500 text-center">
+                <h3 class="font-serif text-2xl mb-4">Lookbook</h3>
+                <div class="h-px w-12 bg-ice-accent mx-auto mb-6"></div>
+                <p class="text-gray-500 font-light text-sm mb-8 leading-relaxed">
+                    Perfetto per e-commerce e cataloghi stagionali. Focus sulla pulizia e sul dettaglio del capo.
+                </p>
+                <ul class="text-[11px] uppercase tracking-widest text-gray-400 space-y-4 mb-10">
+                    <li>3 Ore di Shooting</li>
+                    <li>20 Scatti Post-Prodotti</li>
+                    <li>Fondo Neutro / Studio</li>
+                </ul>
+                <a href="index.html#contact" class="inline-block px-8 py-3 border border-ice-text text-[10px] uppercase tracking-widest hover:bg-ice-text hover:text-white transition-all duration-500">Richiedi Info</a>
+            </div>
+
+            <div class="bg-ice-shade p-10 border border-ice-accent shadow-xl text-center transform scale-105 z-10">
+                <h3 class="font-serif text-2xl mb-4 italic">Editorial</h3>
+                <div class="h-px w-12 bg-ice-text mx-auto mb-6"></div>
+                <p class="text-gray-600 font-light text-sm mb-8 leading-relaxed">
+                    Storytelling visivo per riviste o campagne pubblicitarie. Creazione di un moodboard unico.
+                </p>
+                <ul class="text-[11px] uppercase tracking-widest text-ice-text font-bold space-y-4 mb-10">
+                    <li>Giornata Intera</li>
+                    <li>40 Scatti High-End</li>
+                    <li>Location Scouting</li>
+                    <li>Moodboard Creativa</li>
+                </ul>
+                <a href="index.html#contact" class="inline-block px-8 py-3 bg-ice-text text-white text-[10px] uppercase tracking-widest hover:bg-zinc-800 transition-all duration-500">Prenota Ora</a>
+            </div>
+
+            <div class="bg-white p-10 border border-ice-shade hover:shadow-2xl hover:shadow-blue-100/30 transition-all duration-500 text-center">
+                <h3 class="font-serif text-2xl mb-4">Content Creator</h3>
+                <div class="h-px w-12 bg-ice-accent mx-auto mb-6"></div>
+                <p class="text-gray-500 font-light text-sm mb-8 leading-relaxed">
+                    Produzione di contenuti dinamici per Social Media e Reels di alta qualità.
+                </p>
+                <ul class="text-[11px] uppercase tracking-widest text-gray-400 space-y-4 mb-10">
+                    <li>2 Ore di Shooting</li>
+                    <li>15 Foto + 3 Video Reels</li>
+                    <li>Montaggio Incluso</li>
+                </ul>
+                <a href="index.html#contact" class="inline-block px-8 py-3 border border-ice-text text-[10px] uppercase tracking-widest hover:bg-ice-text hover:text-white transition-all duration-500">Richiedi Info</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-[10px] text-gray-400 uppercase tracking-[0.4em] border-t border-ice-shade bg-white">
+        <p>&copy; 2026 Giada Photography. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
