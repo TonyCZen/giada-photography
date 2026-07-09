@@ -6,7 +6,7 @@ Sito web vetrina e portfolio responsive progettato e sviluppato per una fotograf
 
 ### 🌐 Sito Web Live
 Il progetto è pubblicato ed è navigabile in tempo reale su GitHub Pages:
-🔗 **[Visualizza il Portfolio Live](https://tonyczen.github.io/giada-photography/)** *(Sostituisci questo link con il tuo se è leggermente diverso)*
+🔗 **[Visualizza il Portfolio Live](https://tonyczen.github.io/giada-photography/)**
 
 ---
 
