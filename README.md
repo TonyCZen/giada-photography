@@ -3,6 +3,8 @@
 Sito web vetrina e portfolio responsive progettato e sviluppato per una fotografa professionista. Il progetto si focalizza su un'interfaccia elegante, minimalista e d'impatto visivo, pensata per valorizzare gli scatti e ottimizzare l'esperienza utente su qualsiasi dispositivo (Desktop, Tablet e Mobile).
 
 ---
+<img width="948" height="786" alt="anteprima" src="https://github.com/user-attachments/assets/aeb5b68d-fd46-4161-9749-9dab0e174973" />
+---
 
 ### 🌐 Sito Web Live
 Il progetto è pubblicato ed è navigabile in tempo reale su GitHub Pages:
